@@ -581,6 +581,23 @@
     .hero-stats { flex-direction: column; align-items: center; gap: 1.5rem; }
     .test-grid { margin-top: 2.5rem; }
   }
+
+  /* ── HERO LOGO ── */
+  .hero-logo {
+    display: block;
+    width: 110px;
+    height: auto;
+    margin-bottom: 2.2rem;
+    opacity: 0.92;
+    filter: brightness(1.08);
+  }
+  @media (max-width: 768px) {
+    .hero-logo {
+      width: 88px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 </style>
 </head>
 <body>
@@ -618,6 +635,11 @@
   />
   <div class="container">
     <div class="hero-content">
+      <img
+        src="logo-jm.png"
+        alt="Javier Manzano Fitness and Health"
+        class="hero-logo reveal"
+      />
       <div class="hero-eyebrow">
         <span class="label">Entrenador Personal · Health Coach</span>
       </div>
@@ -907,9 +929,9 @@
       <div class="sobre-img-wrap reveal">
         <img
           class="sobre-img"
-          src="foto-perfil.jpg"
+          src="foto-entreno.jpg"
           alt="Javier Manzano — Entrenador Personal"
-          onerror="this.onerror=null; this.src='foto-perfil.jpeg';"
+          onerror="this.onerror=null; this.src='foto-perfil.jpg';"
         />
         <div class="sobre-img-accent"></div>
       </div>
