@@ -358,20 +358,18 @@
     font-size: 0.8rem; color: var(--text-muted); margin-bottom: 2rem;
     font-style: italic;
   }
-  .plan-price {
+  .plan-access {
+    display: flex; flex-direction: column; gap: 0.4rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--gold-border);
   }
-  .plan-total {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.8rem; font-weight: 300; line-height: 1;
-    color: var(--text-primary); margin-bottom: 0.4rem;
+  .plan-access-tag {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--gold);
   }
-  .plan-total span { font-size: 1.4rem; color: var(--text-muted); }
-  .plan-monthly {
-    font-size: 0.78rem; color: var(--text-muted);
-    letter-spacing: 0.05em;
+  .plan-access-note {
+    font-size: 0.78rem; color: var(--text-muted); font-style: italic;
   }
   .plan-features {
     list-style: none; flex: 1;
@@ -614,9 +612,9 @@
   <div class="hero-bg"></div>
   <img
     class="hero-img"
-    src="https://raw.githubusercontent.com/javiermanzanoruiz/javiermanzanoweb/main/foto-perfil.jpg"
+    src="foto-perfil.jpg"
     alt="Javier Manzano"
-    onerror="this.style.display='none'"
+    onerror="this.onerror=null; this.src='foto-perfil.jpeg';"
   />
   <div class="container">
     <div class="hero-content">
@@ -783,20 +781,20 @@
 <section id="planes">
   <div class="container">
     <div class="planes-header reveal">
-      <span class="label">Inversión</span>
+      <span class="label">Planes de trabajo</span>
       <div class="divider" style="margin:1.5rem auto 1.5rem;"></div>
       <h2>Elige tu<br/><em>plan de transformación</em></h2>
-      <p>Sin compromiso hasta la valoración. Elige el plan que mejor encaje con tu objetivo y tu ritmo.</p>
+      <p>La opción más adecuada depende de tu punto de partida y tu objetivo. Lo definimos juntos en la valoración gratuita.</p>
     </div>
     <div class="planes-grid">
       <!-- TRIMESTRAL -->
       <div class="plan-card reveal">
         <div class="plan-duration">3 meses</div>
         <div class="plan-name">Plan Trimestral</div>
-        <div class="plan-tagline">El punto de partida. Empieza a ver resultados reales.</div>
-        <div class="plan-price">
-          <div class="plan-total">297<span>€</span></div>
-          <div class="plan-monthly">99 € / mes</div>
+        <div class="plan-tagline">Para quien quiere empezar bien y ver resultados reales desde el primer mes.</div>
+        <div class="plan-access">
+          <span class="plan-access-tag">Plazas limitadas</span>
+          <span class="plan-access-note">Precio personalizado en llamada</span>
         </div>
         <ul class="plan-features">
           <li>Plan de entrenamiento personalizado</li>
@@ -806,7 +804,7 @@
           <li>Vídeos de técnica y ejecución</li>
         </ul>
         <a href="https://tr.ee/7v77NR5yG2" target="_blank" class="plan-cta plan-cta-outline">
-          Reservar mi valoración →
+          Reservar valoración →
         </a>
       </div>
 
@@ -815,10 +813,10 @@
         <div class="plan-badge">Más elegido</div>
         <div class="plan-duration">6 meses</div>
         <div class="plan-name">Plan Semestral</div>
-        <div class="plan-tagline">El tiempo justo para transformar hábitos de forma permanente.</div>
-        <div class="plan-price">
-          <div class="plan-total">497<span>€</span></div>
-          <div class="plan-monthly">83 € / mes · Ahorras 97 €</div>
+        <div class="plan-tagline">El tiempo necesario para consolidar hábitos reales y transformar tu composición corporal.</div>
+        <div class="plan-access">
+          <span class="plan-access-tag">Plazas limitadas</span>
+          <span class="plan-access-note">Precio personalizado en llamada</span>
         </div>
         <ul class="plan-features">
           <li>Todo lo del Plan Trimestral</li>
@@ -837,10 +835,10 @@
       <div class="plan-card reveal reveal-delay-2">
         <div class="plan-duration">12 meses</div>
         <div class="plan-name">Plan Anual</div>
-        <div class="plan-tagline">La transformación completa. Para quien va en serio.</div>
-        <div class="plan-price">
-          <div class="plan-total">797<span>€</span></div>
-          <div class="plan-monthly">66 € / mes · Máximo ahorro</div>
+        <div class="plan-tagline">Para quien quiere una transformación completa y aprender a mantenerla para siempre.</div>
+        <div class="plan-access">
+          <span class="plan-access-tag">Plazas limitadas</span>
+          <span class="plan-access-note">Precio personalizado en llamada</span>
         </div>
         <ul class="plan-features">
           <li>Todo lo del Plan Semestral</li>
@@ -852,13 +850,10 @@
           <li>Soporte en viajes y períodos especiales</li>
         </ul>
         <a href="https://tr.ee/7v77NR5yG2" target="_blank" class="plan-cta plan-cta-outline">
-          Reservar mi valoración →
+          Reservar valoración →
         </a>
       </div>
     </div>
-    <p style="text-align:center; margin-top:2rem; font-size:0.78rem; color:var(--text-muted);">
-      * Los precios mostrados son orientativos. Se confirman durante la valoración gratuita.
-    </p>
   </div>
 </section>
 
@@ -912,9 +907,9 @@
       <div class="sobre-img-wrap reveal">
         <img
           class="sobre-img"
-          src="https://raw.githubusercontent.com/javiermanzanoruiz/javiermanzanoweb/main/foto-perfil.jpg"
+          src="foto-perfil.jpg"
           alt="Javier Manzano — Entrenador Personal"
-          onerror="this.style.background='var(--bg-card2)'; this.style.minHeight='400px'"
+          onerror="this.onerror=null; this.src='foto-perfil.jpeg';"
         />
         <div class="sobre-img-accent"></div>
       </div>
