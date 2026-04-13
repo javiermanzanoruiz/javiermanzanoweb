@@ -28,6 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 <style>
   :root {
     --gold: #C9A84C;
@@ -619,6 +620,39 @@
       margin-right: auto;
     }
   }
+
+  /* ── WHATSAPP FLOAT ── */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--gold);
+    color: var(--bg-deep);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .whatsapp-float:hover {
+    background: var(--gold-light);
+    transform: scale(1.1);
+  }
+  @media (max-width: 768px) {
+    .whatsapp-float {
+      bottom: 15px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -1093,5 +1127,8 @@
     });
   });
 </script>
+<a href="https://wa.me/34679691337?text=Hola%20Javier,%20he%20visto%20tu%20web%20y%20quiero%20informarme" target="_blank" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 </html>
