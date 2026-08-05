@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://javiermanzanoruiz.github.io/javiermanzanoweb/sitemap.xml
